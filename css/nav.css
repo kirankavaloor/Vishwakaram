@@ -1,0 +1,273 @@
+header {
+    position: absolute;
+    z-index: 10;
+    width:100%;
+}
+
+.navbar {
+    padding: 10px  0;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #fff; 
+    border-bottom:1px solid #ff2670;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #262626;
+}
+
+.nav-item {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #ff2670;
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background: #ff2670;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+color: #262626;
+padding: 5px 15px;
+}
+
+.banner {
+    position: relative;
+    background: url(../images/home.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    padding: 200px 0 450px;
+}
+
+.banner h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 00;
+    color: #ff2670;
+}
+
+
+.banner p {
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #262626;
+}
+
+.btnD1 {
+    display: inline-block;
+    margin: 1em 0 0;
+    background: #ff2670;
+    color:#fff;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+
+.btnD1:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    color: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+
+.navbar-collapse{
+    background: #fff;
+}
+
+.chat-box {
+    position: fixed;
+    top:65%;
+    display:none;
+}
+
+.chat-box a {
+    color: #495ab8;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    box-shadow:
+    -10px -10px 15px rgba(255,255,255, 0.5),
+    10px 10px 15px rgba(70,70,70, 0.12),
+   inset -10px -10px 15px rgba(255,255,255, 0.5),
+   inset 10px 10px 15px rgba(70,70,70, 0.12);
+   border-radius: 50%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.chat-box a i {
+    font-size: 20px;
+}
+.chat-box a:hover{
+    box-shadow:
+    -10px -10px 15px rgba(255,255,255, 0.5),
+    10px 10px 15px rgba(70,70,70, 0.12),
+    -10px -10px 15px rgba(255,255,255, 0.5),
+    -10px -10px 15px rgba(70,70,70, 0.12);
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+}
+
+
+@media (max-width:768px) {
+    
+    .navbar {
+        margin-left: 5px;
+        margin-right: 5px;
+        border-bottom:1px solid #ff2670;
+    }
+    
+    .nav-item {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .banner {
+        position: relative;
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)),url(../images/home.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position:center;
+        /* padding: 200px 0; */
+    }
+
+    .banner h2 {
+        font-size: 1.8em;
+
+    }
+
+    .navbar-brand {
+        font-weight: 500;
+
+        font-size: 1em;
+
+    }
+
+    .chat-box {
+        position: fixed;
+        top:50%;
+
+    }
+}
+
+.dial i {
+    color: #ff2670;
+    margin-left: 5px;
+}
+
+@media (max-width:768px) {
+    
+    .banner h1 {
+        margin-top: -70px;
+    }
+    
+    /*.dial {*/
+    /*    box-shadow:*/
+    /*            -10px -10px 15px rgba(255,255,255, 0.5),*/
+    /*            10px 10px 15px rgba(70,70,70, 0.12),*/
+    /*           inset -10px -10px 15px rgba(255,255,255, 0.5),*/
+    /*           inset 10px 10px 15px rgba(70,70,70, 0.12); */
+    /*           padding: 5px; */
+    /*           border-radius: 10px;*/
+    /*}*/
+    
+    .dial {
+        font-size: 18px; 
+    }
+
+    /*.dial i {*/
+    /*    color: #ff2670;*/
+    /*}*/
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(255, 38, 110, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 38, 110, 0.6);
+  outline: 0 none;
+}
+
+.btn-primary:focus,
+input[type="button"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(255, 38, 110, 0.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 38, 110, 0.6);
+  outline: 0 none;
+}
+
+
+/* loading web page Start */
+.loadingbody {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+
+.loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0b1522;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .page-loading h2{
+    font-size: 50px;
+    text-shadow: -10px 10px 90px;
+    color: #ff2670;
+    animation: page-loading 2s linear infinite;
+}
+
+@keyframes page-loading {
+    0%,100%{
+        transform:  scale(1);
+    }
+    50%{
+        transform:  scale(0.7);
+    }
+}
+
+/* Loading Web page end */

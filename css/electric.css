@@ -1,0 +1,66 @@
+/* .ser-electric {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    background-image: url('../images/ser-carmodification.gif');
+    background :url('../videos/Carwash.mp4');
+} */
+
+.serimg-electric{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    /* padding: 10px; */
+    /* height: 300px; */
+    /* background-color: bisque; */
+    
+}
+
+.serimg-electric-ele{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    /* padding: 10px; */
+    /* height: 300px; */
+    /* background-color: bisque; */
+    
+}
+
+ .ele1 {
+    background-image: url('../images/Ele1.jpg');
+    padding-right: 10px;
+    
+}
+
+.ele2 {
+    background-image: url('../images/ele2.jpg');
+    padding-left: 10px;
+    
+}
+
+.ele3 {
+    background-image: url('../images/ele3.jpg');
+    
+}
+
+.ele4 {
+    background-image: url('../images/Functional.png');
+    
+}
+
+.ele5 {
+    background-image: url('../images/ele6.png');
+    
+}
+
+.ele6 {
+    background-image: url('../images/ele7.png');
+    
+}

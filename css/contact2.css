@@ -1,0 +1,89 @@
+.contact2 {
+    margin-top: 50px;
+    /* padding-top: 15px; */
+}
+
+.cont {
+    box-shadow: 
+    -10px -10px 15px rgba(255,255,255, 0.5),
+          10px 10px 15px rgba(70,70,70, 0.12),
+         inset -10px -10px 15px rgba(255,255,255, 0.5),
+         inset 10px 10px 15px rgba(70,70,70, 0.12);
+}
+.contact2 .card {
+    height: 400px;
+}
+.contact2 .card .con {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact2 .cont:hover {
+    box-shadow: 
+    -10px -10px 15px rgba(255,255,255, 0.5),
+          10px 10px 15px rgba(70,70,70, 0.12);
+}
+
+.contact2 .card h2{
+    color:#15205f;
+    padding-top: 15px;
+}
+
+.contact2 .card .con .item2 {
+    padding: 5px;
+}
+
+.contact2 .card .con .item2 .icon2 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 
+    -10px -10px 15px rgba(255,255,255, 0.5),
+          10px 10px 15px rgba(70,70,70, 0.12),
+         inset -10px -10px 15px rgba(255,255,255, 0.5),
+         inset 10px 10px 15px rgba(70,70,70, 0.12);
+    border-radius: 50%;
+    outline: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    color: #ff2670;
+}
+
+.contact2 .card .con .item2 .icon2:hover{
+    box-shadow:
+    -10px -10px 15px rgba(255,255,255, 0.5),
+    10px 10px 15px rgba(70,70,70, 0.12);
+    color:#15205f;
+    }
+
+
+    .contact2 .card .con .item2  span {
+        color: #094418;
+    }
+
+
+    .map2 iframe{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        /* margin-top: 40px; */
+        box-shadow:
+        -10px -10px 15px rgba(9, 68, 24, 0.4),
+        10px 10px 15px rgba(70,70,70, 0.12);
+    }
+
+
+    @media (max-width:768px) {
+        
+        .contact2 .card h2 {
+            text-align: center;
+        }
+
+        .contact2 .card {
+            height: auto;
+        }
+
+    }   

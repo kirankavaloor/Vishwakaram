@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.serbtn {
+    padding-top: 20px;
+    padding-left: 10px;
+    position: fixed;
+}
+.serbtn a{
+    /* padding: 20px; */
+    box-shadow:
+    -10px -10px 15px rgba(255,255,255, 0.5),
+    10px 10px 15px rgba(70,70,70, 0.12),
+   inset -10px -10px 15px rgba(255,255,255, 0.5),
+   inset 10px 10px 15px rgba(70,70,70, 0.12);
+   color: #ff2670;   
+   text-decoration: none;
+   padding: 10px;
+}
+.serbtn a:hover {
+    color:#495ab8;
+}
+
+.ser-name {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+
+
+.ser-img {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    /* background-attachment: fixed; */
+    background-image: url('../images/General_service.gif');
+    /* background :url('../videos/Carwash.mp4'); */
+}
+
+ /* video {
+    width: 100%;
+    height: 50vh;
+} */
+
+
+
+.ser-name h2 {
+    color: #495ab8;
+}
+
+.ser1 {
+    background-color: none;
+}
+
+.serimg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    /* height: 300px; */
+    /* background-color: bisque; */
+}
+
+
+
+.oil_change{
+    background-image: url('../images/oil_change.png');
+}
+
+.battery {
+    background-image: url('../images/battery.png');
+}
+
+
+.custom {
+    background-image: url('../images/Custom.png');
+}
+
+.sercon {
+    /* background-color: brown; */
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.sercon h2 {
+    color: #ff2670;
+   
+}
+
+.sercon p {
+    /* color:#15205f; */
+    color: #000;
+}
+
+.sercon ul {
+    padding-left: 30px;
+    color:#ff2670;
+    cursor: pointer;
+}
+
+.sercon ul li::after {
+    color:#15205f;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:768px) {
+    .serimg {
+        display: none;
+    }
+
+    .ser-points ul {
+        padding-left:30px;
+        /* justify-content: center; */
+    }
+    .serbtn {
+        display: none;
+    }
+
+}

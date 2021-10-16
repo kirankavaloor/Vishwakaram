@@ -1,0 +1,101 @@
+.about {
+    margin-top: 50px;
+    color: #15205f;
+}
+
+.mobile {
+    justify-content: center;
+}
+
+.mobile img {
+    width: 200px;
+    height: 300px;
+}
+
+.mobile  h3 {
+    padding-top: 50px;
+    vertical-align: center;
+    /* text-align: center; */
+}
+
+.about-btn{
+    margin-top: 50px;
+}
+
+.about-btn a
+{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 15px;
+    background-color: #ff2670;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    letter-spacing: 5px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.about-btn a:hover{
+    background: #e6d5e4;
+    color: rgb(6, 0, 37);
+    box-shadow: 0 0 50px #ff2670;
+    transition-delay:0.1s ;
+    text-decoration: none;
+}
+.about-btn a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ff2670;
+    border-left: 2px solid #ff2670;
+    transition: 0.5s;
+    transition-delay:0.5s ;
+
+}
+.about-btn a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay:0.5s ;
+    border-radius: 5px;
+}
+.about-btn a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #ff2670;
+    border-right: 2px solid #ff2670;
+    transition: 0.5s;
+    transition-delay:0.5s ;
+
+}
+.about-btn a:hover:after{
+    width: 100%;
+    height: 100%;
+    transition-delay:0.5s ;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width:768px) {
+    .mobile {
+        justify-content: center;
+    }
+
+    .mobile img {
+        align-content: center;
+    }
+    .mobile h3 {
+        text-align: center;
+    }
+    .mobile p {
+        text-align: center;
+    }
+}
