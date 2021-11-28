@@ -17,7 +17,10 @@
     <!-- === For scroll animation === -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+ <!-- For Gallery image we need this link start-->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+ <!-- For Gallery image we need this link End-->
+ <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/service.css">
     <link rel="stylesheet" href="css/about.css">
@@ -280,9 +283,49 @@
         </div>
       </section>
       
+
+      <!-- Gallery Section Start -->
+      <section>
+        <div class="container">
+
+        
+        <!-- Gallery Section Start -->
+        <div class="gallery" id="ser" data-scroll-index="2">
+            <h1><span>Gallery</span></h1>
+        </div>
+    
+        <!-- For Laptop starts-->
+        <div class="swiper2">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/gallery/Modification2.png" alt="img1" ></div>
+                    <div class="swiper-slide"><video controls>  
+                      <source src="HW01.mp4" type="video/mp4">
+                      <source src="HW01.ogg" type="video/ogg">
+                      Your browser does not support HTML video.
+                    </video></div>
+                    <div class="swiper-slide"><img src="images/gallery/Modification1.png" alt="img1" ></div>
+                    <div class="swiper-slide"><img src="images/gallery/Perfomance.png" alt="img1" ></div>
+                    <div class="swiper-slide"><img src="images/gallery/oil-change.jpg" alt="img1" ></div>
+                    <div class="swiper-slide"><img src="images/gallery/Modification2.png" alt="img1" ></div>
+                    <div class="swiper-slide"><img src="images/gallery/Perfomance.png" alt="img1" ></div>
+                    <div class="swiper-slide"><img src="images/gallery/Modification2.png" alt="img1" ></div>
+                    <div class="swiper-slide"><img src="images/gallery/Modification1.png" alt="img1" ></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination" style="display: none;"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="color:#ff2670"></div>
+                <div class="swiper-button-prev" style="color:#ff2670"></div>
+            </div>
+            
+        </div>
+        
+        <!-- For Laptop Ends -->      
+    </div>    
+    </section>
+      <!-- Gallery Section Ends -->
     <!-- ==== About Page Ends ==== -->
-
-
     <!-- ====== Contact Section Starts ====== -->
     <!-- <section class="contact">-->
     <!--  <div class="container">-->
@@ -462,6 +505,59 @@
         duration:500
       });
     </script>
+
+    <!-- === Gallery  === -->
+    <script type="module">
+       
+      if(window.matchMedia("(max-width: 768px)").matches) {
+      var swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  // loop: true,
+  //         autoplay: {
+  //         delay: 3000,
+  //         disableOnInteraction: false,
+  //         },
+  });
+  
+  } else {
+      var swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  // loop: true,
+  //         autoplay: {
+  //         delay: 3000,
+  //         disableOnInteraction: false,
+  //         },
+  });
+  }
+  
+    </script>
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- === Gallery Script Ends === -->
     <!-- === for scroll animation === -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
